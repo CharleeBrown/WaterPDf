@@ -31,7 +31,7 @@ namespace WatermarkAdd
         {
             getPDF pdfs = new getPDF();
             
-            pdfs.markPDF(pathBox.Text, wtrBox.Text, nameBox.Text,Convert.ToInt32(sizeBox.SelectedItem));
+            pdfs.markPDF(pathBox.Text, wtrBox.Text, nameBox.Text,Convert.ToInt32(sizeBox.SelectedItem), destBox.Text);
       
         }
 
@@ -66,7 +66,7 @@ namespace WatermarkAdd
                 ToolTip tool = new ToolTip();
 
                 // Set up the delays for the ToolTip.
-                tool.AutoPopDelay = 800;
+                tool.AutoPopDelay = 8000;
                 tool.InitialDelay = 1000;
                 tool.ReshowDelay = 5000;
                 // Force the ToolTip text to be displayed whether or not the form is active.
@@ -80,7 +80,7 @@ namespace WatermarkAdd
                 ToolTip tool = new ToolTip();
 
                 // Set up the delays for the ToolTip.
-                tool.AutoPopDelay = 800;
+                tool.AutoPopDelay = 8000;
                 tool.InitialDelay = 1000;
                 tool.ReshowDelay = 5000;
                 // Force the ToolTip text to be displayed whether or not the form is active.
@@ -89,6 +89,12 @@ namespace WatermarkAdd
                 // Set up the ToolTip text for the Button and Checkbox.
                 tool.SetToolTip(this.wtrBox, "Recommended font sizes : 20 - 30");
             }
+        }
+
+        private void saveBtn_Click(object sender, EventArgs e)
+        {
+            pullPath paths = new pullPath();
+            destBox.Text = paths.SaveFile();
         }
     }
 

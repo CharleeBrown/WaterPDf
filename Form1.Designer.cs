@@ -44,6 +44,9 @@ namespace WatermarkAdd
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.label5 = new System.Windows.Forms.Label();
+            this.destBox = new System.Windows.Forms.TextBox();
+            this.saveBtn = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,7 +94,7 @@ namespace WatermarkAdd
             // 
             // runBtn
             // 
-            this.runBtn.Location = new System.Drawing.Point(236, 235);
+            this.runBtn.Location = new System.Drawing.Point(225, 294);
             this.runBtn.Name = "runBtn";
             this.runBtn.Size = new System.Drawing.Size(153, 51);
             this.runBtn.TabIndex = 5;
@@ -187,11 +190,40 @@ namespace WatermarkAdd
             this.helpToolStripMenuItem1.Text = "Help";
             this.helpToolStripMenuItem1.Click += new System.EventHandler(this.helpToolStripMenuItem1_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(12, 245);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(139, 20);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Destination Folder";
+            // 
+            // destBox
+            // 
+            this.destBox.Location = new System.Drawing.Point(177, 238);
+            this.destBox.Name = "destBox";
+            this.destBox.Size = new System.Drawing.Size(289, 26);
+            this.destBox.TabIndex = 14;
+            // 
+            // saveBtn
+            // 
+            this.saveBtn.Location = new System.Drawing.Point(500, 238);
+            this.saveBtn.Name = "saveBtn";
+            this.saveBtn.Size = new System.Drawing.Size(119, 35);
+            this.saveBtn.TabIndex = 15;
+            this.saveBtn.Text = "Browse";
+            this.saveBtn.UseVisualStyleBackColor = true;
+            this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(635, 298);
+            this.ClientSize = new System.Drawing.Size(635, 375);
+            this.Controls.Add(this.saveBtn);
+            this.Controls.Add(this.destBox);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.sizeBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -230,6 +262,9 @@ namespace WatermarkAdd
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox destBox;
+        private System.Windows.Forms.Button saveBtn;
     }
 }
 

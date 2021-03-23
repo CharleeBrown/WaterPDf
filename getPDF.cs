@@ -22,11 +22,11 @@ namespace WatermarkAdd
         // The end goal is to have a user select the path of a PDf in need of watermarks. 
         // Submit the file and press GO. Once they press Go, it grabs the pdf and watermarks it, then saves it in the network folder.
 
-        public void markPDF(string filepath, string watermark, string userfile, int fontSize)
+        public void markPDF(string filepath, string watermark, string userfile, int fontSize, string destination)
         {
 
             
-            string destination = @"";
+            
             
            // string defaultWatermark = "Extracted, with permission, from the Annual Book of ASTM Standards, copyright ASTM Internatinal, 100 Barr Harbor Drive, West Conshohocken, PA 19428";
             string userWatermark = watermark;
@@ -46,6 +46,10 @@ namespace WatermarkAdd
             else if (string.IsNullOrWhiteSpace(userfile))
             {
                 MessageBox.Show("Enter a filename", "WaterPDF");
+            }
+            else if (string.IsNullOrWhiteSpace(destination))
+            {
+                MessageBox.Show("Select a save destination");
             }
             else
             {
@@ -85,7 +89,7 @@ namespace WatermarkAdd
                  
                 if (MessageBox.Show("Your PDF has been watered.", "WaterPDF") == DialogResult.OK)
                 {
-                    System.Diagnostics.Process.Start("explorer.exe", @"");
+                    System.Diagnostics.Process.Start("explorer.exe", destination);
                     
                 }
                     

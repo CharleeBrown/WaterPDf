@@ -10,6 +10,7 @@ namespace WatermarkAdd
 {
     class pullPath
     {
+        string savePath;
         string mainPath;
         public string GetFile()
         {
@@ -26,6 +27,18 @@ namespace WatermarkAdd
 
 
             return mainPath;
+
+        }
+
+        public string SaveFile()
+        {
+            FolderBrowserDialog  folder = new FolderBrowserDialog();
+            if(folder.ShowDialog() == DialogResult.OK)
+            {
+                 savePath = folder.SelectedPath;
+            }
+            return savePath;
+
 
         }
     }
