@@ -51,12 +51,12 @@ namespace WatermarkAdd
             // 
             this.pathBox.Location = new System.Drawing.Point(179, 31);
             this.pathBox.Name = "pathBox";
-            this.pathBox.Size = new System.Drawing.Size(225, 26);
+            this.pathBox.Size = new System.Drawing.Size(287, 26);
             this.pathBox.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(411, 31);
+            this.button1.Location = new System.Drawing.Point(500, 31);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(119, 35);
             this.button1.TabIndex = 1;
@@ -75,15 +75,15 @@ namespace WatermarkAdd
             // 
             // nameBox
             // 
-            this.nameBox.Location = new System.Drawing.Point(179, 128);
+            this.nameBox.Location = new System.Drawing.Point(179, 143);
             this.nameBox.Name = "nameBox";
-            this.nameBox.Size = new System.Drawing.Size(224, 26);
+            this.nameBox.Size = new System.Drawing.Size(288, 26);
             this.nameBox.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 131);
+            this.label2.Location = new System.Drawing.Point(12, 149);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(154, 20);
             this.label2.TabIndex = 4;
@@ -91,7 +91,7 @@ namespace WatermarkAdd
             // 
             // runBtn
             // 
-            this.runBtn.Location = new System.Drawing.Point(213, 227);
+            this.runBtn.Location = new System.Drawing.Point(236, 235);
             this.runBtn.Name = "runBtn";
             this.runBtn.Size = new System.Drawing.Size(153, 51);
             this.runBtn.TabIndex = 5;
@@ -102,8 +102,9 @@ namespace WatermarkAdd
             // wtrBox
             // 
             this.wtrBox.Location = new System.Drawing.Point(180, 73);
+            this.wtrBox.Multiline = true;
             this.wtrBox.Name = "wtrBox";
-            this.wtrBox.Size = new System.Drawing.Size(224, 26);
+            this.wtrBox.Size = new System.Drawing.Size(286, 49);
             this.wtrBox.TabIndex = 6;
             this.wtrBox.TextChanged += new System.EventHandler(this.wtrBox_TextChanged);
             // 
@@ -119,7 +120,7 @@ namespace WatermarkAdd
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(92, 182);
+            this.label4.Location = new System.Drawing.Point(89, 201);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 20);
             this.label4.TabIndex = 8;
@@ -144,9 +145,9 @@ namespace WatermarkAdd
             "36",
             "38",
             "40"});
-            this.sizeBox.Location = new System.Drawing.Point(179, 178);
+            this.sizeBox.Location = new System.Drawing.Point(180, 193);
             this.sizeBox.Name = "sizeBox";
-            this.sizeBox.Size = new System.Drawing.Size(224, 28);
+            this.sizeBox.Size = new System.Drawing.Size(287, 28);
             this.sizeBox.TabIndex = 9;
             // 
             // menuStrip1
@@ -157,7 +158,7 @@ namespace WatermarkAdd
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(685, 43);
+            this.menuStrip1.Size = new System.Drawing.Size(635, 33);
             this.menuStrip1.TabIndex = 12;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -167,7 +168,7 @@ namespace WatermarkAdd
             this.helpToolStripMenuItem,
             this.helpToolStripMenuItem1});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(54, 39);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(54, 29);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // helpToolStripMenuItem
@@ -190,7 +191,7 @@ namespace WatermarkAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(571, 319);
+            this.ClientSize = new System.Drawing.Size(635, 298);
             this.Controls.Add(this.sizeBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);

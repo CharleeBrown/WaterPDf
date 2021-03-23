@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using PdfSharp.Pdf;
 using PdfSharp.Internal;
+using System.Diagnostics;
 using PdfSharp.Fonts;
 using PdfSharp.Drawing;
 using PdfSharp.Charting;
@@ -25,7 +26,7 @@ namespace WatermarkAdd
         {
 
             
-            string destination = @"J:\Groups\QA\Watermarked PDFs";
+            string destination = @"";
             
            // string defaultWatermark = "Extracted, with permission, from the Annual Book of ASTM Standards, copyright ASTM Internatinal, 100 Barr Harbor Drive, West Conshohocken, PA 19428";
             string userWatermark = watermark;
@@ -67,7 +68,7 @@ namespace WatermarkAdd
                 format.Alignment = XStringAlignment.Near;
                 format.LineAlignment = XLineAlignment.Near;
 
-                XBrush brush = new XSolidBrush(XColor.FromKnownColor(XKnownColor.Gray));
+                XBrush brush = new XSolidBrush(XColor.FromKnownColor(XKnownColor.LightGray));
 
                 gfx.DrawString(watermark, font, brush,
                  new XPoint((page.Width - size.Width) / 2, (page.Height - size.Height) / 2),
@@ -80,10 +81,16 @@ namespace WatermarkAdd
                     new XPoint((page.Width - size.Width) / 2, (page.Height - size.Height) / 2),
                     format);
                 document.Save(newFileName);
-                if(MessageBox.Show("Your PDF has been watered.", "WaterPDF") == DialogResult.OK)
+              
+                 
+                if (MessageBox.Show("Your PDF has been watered.", "WaterPDF") == DialogResult.OK)
                 {
-                    System.Diagnostics.Process.Start("explorer.exe", @"J:\Groups\QA\Watermarked PDFs");
+                    System.Diagnostics.Process.Start("explorer.exe", @"");
+                    
                 }
+                    
+                   
+                
                
             }
            
