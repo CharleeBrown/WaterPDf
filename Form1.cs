@@ -17,6 +17,7 @@ namespace WatermarkAdd
             InitializeComponent();
             sizeBox.SelectedIndex = 1;
           
+       
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -44,6 +45,50 @@ namespace WatermarkAdd
         {
             helpForm form3 = new helpForm();
             form3.Show();
+        }
+
+        private void waterClear_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void filenameClear_Click(object sender, EventArgs e)
+        {
+       
+        }
+
+        private void wtrBox_TextChanged(object sender, EventArgs e)
+        {
+           
+            if (wtrBox.TextLength < 40)
+            {
+                // Create the ToolTip and associate with the Form container.
+                ToolTip tool = new ToolTip();
+
+                // Set up the delays for the ToolTip.
+                tool.AutoPopDelay = 800;
+                tool.InitialDelay = 1000;
+                tool.ReshowDelay = 5000;
+                // Force the ToolTip text to be displayed whether or not the form is active.
+                tool.ShowAlways = true;
+
+                // Set up the ToolTip text for the Button and Checkbox.
+                tool.SetToolTip(this.wtrBox, "Recommended font sizes : 32 - 40");
+            }
+            else if (wtrBox.TextLength > 41 & wtrBox.TextLength < 70)
+            {
+                ToolTip tool = new ToolTip();
+
+                // Set up the delays for the ToolTip.
+                tool.AutoPopDelay = 800;
+                tool.InitialDelay = 1000;
+                tool.ReshowDelay = 5000;
+                // Force the ToolTip text to be displayed whether or not the form is active.
+                tool.ShowAlways = true;
+
+                // Set up the ToolTip text for the Button and Checkbox.
+                tool.SetToolTip(this.wtrBox, "Recommended font sizes : 20 - 30");
+            }
         }
     }
 

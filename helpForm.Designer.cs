@@ -29,6 +29,7 @@ namespace WatermarkAdd
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(helpForm));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -47,7 +48,7 @@ namespace WatermarkAdd
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(24, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(500, 24);
+            this.label2.Size = new System.Drawing.Size(417, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "In this network folder  -  J:\\Groups\\QA\\Watermarked PDFs";
             // 
@@ -58,6 +59,7 @@ namespace WatermarkAdd
             this.ClientSize = new System.Drawing.Size(451, 96);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "helpForm";
             this.Text = "WaterPDF";
             this.ResumeLayout(false);
