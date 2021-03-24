@@ -1,10 +1,11 @@
-﻿using System;
+﻿using PdfSharp.Pdf;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
+
+
+
 
 namespace WatermarkAdd
 {
@@ -31,21 +32,36 @@ namespace WatermarkAdd
 
             // Return the filename variable. 
             return mainPath;
+
         }
 
         public string SaveFile()
         {
             // Opens the folder browswer dialog. 
-            FolderBrowserDialog  folder = new FolderBrowserDialog();
+            FolderBrowserDialog folder = new FolderBrowserDialog();
 
             // If the folder is ok. 
-            if(folder.ShowDialog() == DialogResult.OK)
+            if (folder.ShowDialog() == DialogResult.OK)
             {
                 // Set the variable to the folder path. 
-                 savePath = folder.SelectedPath;
+                savePath = folder.SelectedPath;
             }
             // return the folder path variable. 
             return savePath;
+        }
+
+        public List<Int32> GetPages(string filePath)
+        {
+            List<Int32> pageCount = new List<Int32>();
+            FileInfo infos = new FileInfo(filePath);
+
+            PdfDocument doc = new PdfDocument(infos.FullName);
+            var count = doc.Pages.Count;
+            for (int i = 0; i < count; i++)
+            {
+                pageCount.Add(i);
+            }
+            return pageCount;
         }
     }
 }

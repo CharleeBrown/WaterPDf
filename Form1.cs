@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using WaterPDF;
 
 namespace WatermarkAdd
 {
@@ -16,23 +10,37 @@ namespace WatermarkAdd
         {
             InitializeComponent();
             sizeBox.SelectedIndex = 1;
-          
-       
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             pullPath paths = new pullPath();
             pathBox.Text = paths.GetFile();
-            
+
+            //foreach (var count in paths.GetPages(pathBox.Text))
+            //{
+            //    pageCount.Items.Add(count);
+            //}
+
         }
 
         private void runBtn_Click(object sender, EventArgs e)
         {
             getPDF pdfs = new getPDF();
-            
-            pdfs.markPDF(pathBox.Text, wtrBox.Text, nameBox.Text,Convert.ToInt32(sizeBox.SelectedItem), destBox.Text);
-      
+            multiPagePDF multiPage = new multiPagePDF();
+            if (allPageCheck.Checked != true)
+            {
+                pdfs.markPDF(pathBox.Text, wtrBox.Text, nameBox.Text, Convert.ToInt32(sizeBox.SelectedItem), destBox.Text);
+            }
+            else
+            {
+                multiPage.markPDF(pathBox.Text, wtrBox.Text, nameBox.Text, Convert.ToInt32(sizeBox.SelectedItem), destBox.Text);
+            }
+
+
         }
 
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
@@ -49,17 +57,17 @@ namespace WatermarkAdd
 
         private void waterClear_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void filenameClear_Click(object sender, EventArgs e)
         {
-       
+
         }
 
         private void wtrBox_TextChanged(object sender, EventArgs e)
         {
-           
+
             if (wtrBox.TextLength < 40)
             {
                 // Create the ToolTip and associate with the Form container.
@@ -96,7 +104,12 @@ namespace WatermarkAdd
             pullPath paths = new pullPath();
             destBox.Text = paths.SaveFile();
         }
+
+        private void pathBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
-    
+
 }
