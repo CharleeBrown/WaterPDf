@@ -18,18 +18,7 @@ namespace WatermarkAdd
             pullPath paths = new pullPath();
             PageCounter counter = new PageCounter();
             pathBox.Text = paths.GetFile();
-            pages.Items.Clear();
-            foreach(var count in counter.pullPages(pathBox.Text))
-            {
-                pages.Items.Add(count);
-              
-            }
-            
-            
-            //foreach (var count in paths.GetPages(pathBox.Text))
-            //{
-            //    pageCount.Items.Add(count);
-            //}
+          
         }
 
         private void runBtn_Click(object sender, EventArgs e)

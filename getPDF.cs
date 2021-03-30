@@ -18,24 +18,24 @@ namespace WatermarkAdd
             string userWatermark = watermark;
 
             // If the watermark field is empty. 
-            if (string.IsNullOrEmpty(userWatermark))
+            if (string.IsNullOrEmpty(filepath))
             {
-                MessageBox.Show("Enter text for the watermark.", "WaterPDF");  // Alert the user. 
-
-            }
+                MessageBox.Show("ERROR: No PDF selected. \n \nSelect a correct file.", "WaterPDF", MessageBoxButtons.OK);// Alert the user
+            } 
             // If the path field is empty. 
-            else if (string.IsNullOrEmpty(filepath))
+            else if (string.IsNullOrEmpty(userWatermark))
             {
-                MessageBox.Show("Select a file.", "WaterPDF");// Alert the user
-            }
+                MessageBox.Show("ERROR: No Watermark text. \n \nEnter text for the watermark.", "WaterPDF", MessageBoxButtons.OK);  // Alert the user. 
+
+            } 
             // If the new filename is empty. 
             else if (string.IsNullOrWhiteSpace(userfile))
             {
-                MessageBox.Show("Enter a filename", "WaterPDF"); // Alert the user. 
+                MessageBox.Show("ERROR: No save filename. \n \nEnter a save filename", "WaterPDF", MessageBoxButtons.OK); // Alert the user. 
             }
             else if (string.IsNullOrWhiteSpace(destination))
             {
-                MessageBox.Show("Select a save destination"); // Alert the user. 
+                MessageBox.Show("ERROR : No destination. \n \nChoose a save folder.", "WaterPDF", MessageBoxButtons.OK); // Alert the user. 
             }
             else
             {
@@ -55,10 +55,13 @@ namespace WatermarkAdd
 
                 // Sets the first page as the page to work on. 
                 PdfPage page = document.Pages[0];
+                string fonts = Convert.ToString(fontSize);
 
-
+                int.TryParse(fonts, out int result);
+               
                 // Creating the font variable. 
-                XFont font = new XFont("Arial", fontSize, XFontStyle.Regular);
+                XFont font = new XFont("Arial", result, XFontStyle.Regular);
+
 
                 // Creating the graphics. 
                 XGraphics gfx = XGraphics.FromPdfPage(page, XGraphicsPdfPageOptions.Append);
