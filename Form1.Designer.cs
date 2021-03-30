@@ -47,7 +47,6 @@ namespace WatermarkAdd
             this.label5 = new System.Windows.Forms.Label();
             this.destBox = new System.Windows.Forms.TextBox();
             this.saveBtn = new System.Windows.Forms.Button();
-            this.allPageCheck = new System.Windows.Forms.CheckBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +55,7 @@ namespace WatermarkAdd
             this.pathBox.Location = new System.Drawing.Point(159, 25);
             this.pathBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pathBox.Name = "pathBox";
-            this.pathBox.Size = new System.Drawing.Size(256, 22);
+            this.pathBox.Size = new System.Drawing.Size(253, 22);
             this.pathBox.TabIndex = 0;
             this.pathBox.TextChanged += new System.EventHandler(this.pathBox_TextChanged);
             // 
@@ -74,7 +73,7 @@ namespace WatermarkAdd
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(85, 27);
+            this.label1.Location = new System.Drawing.Point(85, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 17);
             this.label1.TabIndex = 2;
@@ -82,24 +81,24 @@ namespace WatermarkAdd
             // 
             // nameBox
             // 
-            this.nameBox.Location = new System.Drawing.Point(158, 174);
+            this.nameBox.Location = new System.Drawing.Point(159, 120);
             this.nameBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nameBox.Name = "nameBox";
-            this.nameBox.Size = new System.Drawing.Size(256, 22);
+            this.nameBox.Size = new System.Drawing.Size(253, 22);
             this.nameBox.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 179);
+            this.label2.Location = new System.Drawing.Point(10, 120);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 17);
+            this.label2.Size = new System.Drawing.Size(134, 17);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Enter new File name";
+            this.label2.Text = "Enter New Filename";
             // 
             // runBtn
             // 
-            this.runBtn.Location = new System.Drawing.Point(193, 310);
+            this.runBtn.Location = new System.Drawing.Point(199, 234);
             this.runBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.runBtn.Name = "runBtn";
             this.runBtn.Size = new System.Drawing.Size(136, 41);
@@ -110,18 +109,18 @@ namespace WatermarkAdd
             // 
             // wtrBox
             // 
-            this.wtrBox.Location = new System.Drawing.Point(159, 118);
+            this.wtrBox.Location = new System.Drawing.Point(159, 53);
             this.wtrBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.wtrBox.Multiline = true;
             this.wtrBox.Name = "wtrBox";
-            this.wtrBox.Size = new System.Drawing.Size(255, 40);
+            this.wtrBox.Size = new System.Drawing.Size(253, 63);
             this.wtrBox.TabIndex = 6;
             this.wtrBox.TextChanged += new System.EventHandler(this.wtrBox_TextChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(43, 121);
+            this.label3.Location = new System.Drawing.Point(36, 53);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(108, 17);
             this.label3.TabIndex = 7;
@@ -130,7 +129,7 @@ namespace WatermarkAdd
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(78, 221);
+            this.label4.Location = new System.Drawing.Point(77, 160);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 17);
             this.label4.TabIndex = 8;
@@ -155,10 +154,10 @@ namespace WatermarkAdd
             "36",
             "38",
             "40"});
-            this.sizeBox.Location = new System.Drawing.Point(159, 214);
+            this.sizeBox.Location = new System.Drawing.Point(159, 160);
             this.sizeBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sizeBox.Name = "sizeBox";
-            this.sizeBox.Size = new System.Drawing.Size(256, 24);
+            this.sizeBox.Size = new System.Drawing.Size(254, 24);
             this.sizeBox.TabIndex = 9;
             // 
             // menuStrip1
@@ -186,7 +185,7 @@ namespace WatermarkAdd
             // 
             this.helpToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.helpToolStripMenuItem.Text = "About";
             this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
@@ -194,14 +193,14 @@ namespace WatermarkAdd
             // 
             this.helpToolStripMenuItem1.BackColor = System.Drawing.Color.Transparent;
             this.helpToolStripMenuItem1.Name = "helpToolStripMenuItem1";
-            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(133, 26);
+            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.helpToolStripMenuItem1.Text = "Help";
             this.helpToolStripMenuItem1.Click += new System.EventHandler(this.helpToolStripMenuItem1_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(10, 256);
+            this.label5.Location = new System.Drawing.Point(21, 196);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(123, 17);
             this.label5.TabIndex = 13;
@@ -209,39 +208,28 @@ namespace WatermarkAdd
             // 
             // destBox
             // 
-            this.destBox.Location = new System.Drawing.Point(156, 250);
+            this.destBox.Location = new System.Drawing.Point(159, 196);
             this.destBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.destBox.Name = "destBox";
-            this.destBox.Size = new System.Drawing.Size(257, 22);
+            this.destBox.Size = new System.Drawing.Size(253, 22);
             this.destBox.TabIndex = 14;
             // 
             // saveBtn
             // 
-            this.saveBtn.Location = new System.Drawing.Point(444, 232);
+            this.saveBtn.Location = new System.Drawing.Point(444, 196);
             this.saveBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.saveBtn.Name = "saveBtn";
-            this.saveBtn.Size = new System.Drawing.Size(106, 28);
+            this.saveBtn.Size = new System.Drawing.Size(106, 29);
             this.saveBtn.TabIndex = 15;
             this.saveBtn.Text = "Browse";
             this.saveBtn.UseVisualStyleBackColor = true;
             this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
             // 
-            // allPageCheck
-            // 
-            this.allPageCheck.AutoSize = true;
-            this.allPageCheck.Location = new System.Drawing.Point(227, 92);
-            this.allPageCheck.Name = "allPageCheck";
-            this.allPageCheck.Size = new System.Drawing.Size(170, 21);
-            this.allPageCheck.TabIndex = 16;
-            this.allPageCheck.Text = "Watermark All Pages?";
-            this.allPageCheck.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(564, 362);
-            this.Controls.Add(this.allPageCheck);
+            this.ClientSize = new System.Drawing.Size(564, 286);
             this.Controls.Add(this.saveBtn);
             this.Controls.Add(this.destBox);
             this.Controls.Add(this.label5);
@@ -261,6 +249,7 @@ namespace WatermarkAdd
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "WaterPDF";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -287,7 +276,6 @@ namespace WatermarkAdd
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox destBox;
         private System.Windows.Forms.Button saveBtn;
-        private System.Windows.Forms.CheckBox allPageCheck;
     }
 }
 

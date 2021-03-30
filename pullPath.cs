@@ -50,16 +50,18 @@ namespace WatermarkAdd
             return savePath;
         }
 
-        public List<Int32> GetPages(string filePath)
+
+
+        public List<string> GetPages(string filePath)
         {
-            List<Int32> pageCount = new List<Int32>();
+            List<string> pageCount = new List<string>();
             FileInfo infos = new FileInfo(filePath);
 
             PdfDocument doc = new PdfDocument(infos.FullName);
             var count = doc.Pages.Count;
             for (int i = 0; i < count; i++)
             {
-                pageCount.Add(i);
+                pageCount.Add(i.ToString());
             }
             return pageCount;
         }
