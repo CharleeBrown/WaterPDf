@@ -4,9 +4,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Windows.Forms;
 
-
-
-
 namespace WatermarkAdd
 {
     class pullPath
@@ -29,10 +26,8 @@ namespace WatermarkAdd
                 // Set the variable to the file name. 
                 mainPath = infos.FullName;
             }
-
             // Return the filename variable. 
             return mainPath;
-
         }
 
         public string SaveFile()
@@ -49,8 +44,6 @@ namespace WatermarkAdd
             // return the folder path variable. 
             return savePath;
         }
-
-
 
         public List<string> GetPages(string filePath)
         {

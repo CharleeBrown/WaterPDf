@@ -43,7 +43,6 @@ namespace WatermarkAdd
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.label5 = new System.Windows.Forms.Label();
             this.destBox = new System.Windows.Forms.TextBox();
             this.saveBtn = new System.Windows.Forms.Button();
@@ -74,7 +73,7 @@ namespace WatermarkAdd
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(85, 27);
+            this.label1.Location = new System.Drawing.Point(91, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 17);
             this.label1.TabIndex = 2;
@@ -130,7 +129,7 @@ namespace WatermarkAdd
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(77, 162);
+            this.label4.Location = new System.Drawing.Point(83, 166);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 17);
             this.label4.TabIndex = 8;
@@ -176,8 +175,7 @@ namespace WatermarkAdd
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.helpToolStripMenuItem,
-            this.helpToolStripMenuItem1});
+            this.helpToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "File";
@@ -186,22 +184,14 @@ namespace WatermarkAdd
             // 
             this.helpToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.helpToolStripMenuItem.Text = "About";
             this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
-            // 
-            // helpToolStripMenuItem1
-            // 
-            this.helpToolStripMenuItem1.BackColor = System.Drawing.Color.Transparent;
-            this.helpToolStripMenuItem1.Name = "helpToolStripMenuItem1";
-            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(133, 26);
-            this.helpToolStripMenuItem1.Text = "Help";
-            this.helpToolStripMenuItem1.Click += new System.EventHandler(this.helpToolStripMenuItem1_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 199);
+            this.label5.Location = new System.Drawing.Point(27, 196);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(123, 17);
             this.label5.TabIndex = 13;
@@ -285,7 +275,6 @@ namespace WatermarkAdd
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox destBox;
         private System.Windows.Forms.Button saveBtn;
