@@ -43,8 +43,7 @@ namespace WatermarkAdd
 
         private void helpToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            helpForm form3 = new helpForm();
-            form3.Show();
+
         }
         private void wtrBox_TextChanged(object sender, EventArgs e)
         {}
