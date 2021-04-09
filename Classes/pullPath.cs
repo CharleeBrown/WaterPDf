@@ -14,7 +14,8 @@ namespace WatermarkAdd
         {
             // Opens the file dialog that only looks for PDFs. 
             OpenFileDialog files = new OpenFileDialog();
-            files.Filter = ".PDF - PDF Files|*.PDF";
+            files.Filter = "PDF|*.pdf";
+            //files.Filter = ".* - All Files|*.*";
             files.Title = "Choose a file to import";
 
             // If the file is ok. 

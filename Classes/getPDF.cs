@@ -9,7 +9,6 @@ namespace WatermarkAdd
 {
     class getPDF
     {
-
         // The end goal is to have a user select the path of a PDf in need of watermarks. 
         // Submit the file and press GO. Once they press Go, it grabs the pdf and watermarks it, then saves it in the network folder.
 
@@ -42,7 +41,6 @@ namespace WatermarkAdd
                 // Creates a new file path to save the watermarked PDF.
                 string newFileName = destination + @"\" + userfile + ".pdf";
 
-
                 // Opens the file from the path provided.
                 PdfDocument document = PdfReader.Open(filepath);
 
@@ -61,8 +59,6 @@ namespace WatermarkAdd
                
                 // Creating the font variable. 
                 XFont font = new XFont("Arial", result, XFontStyle.Regular);
-
-
                 // Creating the graphics. 
                 XGraphics gfx = XGraphics.FromPdfPage(page, XGraphicsPdfPageOptions.Append);
 
@@ -96,7 +92,6 @@ namespace WatermarkAdd
                     System.Diagnostics.Process.Start("explorer.exe", destination);
                 }
             }
-
         }
     }
 }

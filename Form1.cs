@@ -15,7 +15,7 @@ namespace WatermarkAdd
         private void button1_Click(object sender, EventArgs e)
         {
             pullPath paths = new pullPath();
-            PageCounter counter = new PageCounter();
+           // PageCounter counter = new PageCounter();
             pathBox.Text = paths.GetFile();
         }
         private void runBtn_Click(object sender, EventArgs e)
@@ -41,28 +41,10 @@ namespace WatermarkAdd
             form.Show();
         }
 
-        private void helpToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void wtrBox_TextChanged(object sender, EventArgs e)
-        {}
-
         private void saveBtn_Click(object sender, EventArgs e)
         {
             pullPath paths = new pullPath();
             destBox.Text = paths.SaveFile();
         }
-
-        private void pathBox_TextChanged(object sender, EventArgs e)
-        {}
-
-        private void Form1_Load(object sender, EventArgs e)
-        {}
-
-        private void allPageCheck_CheckedChanged(object sender, EventArgs e)
-        {}
     }
-
-
 }
