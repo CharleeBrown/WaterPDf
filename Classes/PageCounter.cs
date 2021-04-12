@@ -15,7 +15,6 @@ namespace WaterPDF
     {
         // List<int> pageCounts = new List<int>();
         int pages; 
-        
       public int pullPages(string filename)
         {
             //pageCounts.Clear();
@@ -25,18 +24,10 @@ namespace WaterPDF
                 //PdfPages page = document.Pages;
                 Int32 pages = document.PageCount;
                 document.Close();
-                //for (var count = 0; count < pages; count++)
-                //{
-                //    pageCounts.Add(count);
-                //}
             }
             catch(Exception ex)
             {
                 throw ex.InnerException;
             }
             return pages;
-        }
-       
-
-    }
-}
+        }}}

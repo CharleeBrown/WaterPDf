@@ -42,8 +42,10 @@ namespace WaterPDF
                     // Creates a new file path to save the watermarked PDF.
                     string newFileName = destination + @"\" + userfile + ".pdf";
 
+
+                    //PdfPasswordProvider provider;
                     // Opens the file from the path provided.
-                    PdfDocument document = PdfReader.Open(filepath);
+                    PdfDocument document = PdfReader.Open(filepath, PdfDocumentOpenMode.Modify );
 
                     // Counts the amount of pages in the PDF. 
                     PdfPages pages = document.Pages;

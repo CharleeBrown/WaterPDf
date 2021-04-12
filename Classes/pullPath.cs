@@ -30,12 +30,10 @@ namespace WatermarkAdd
             // Return the filename variable. 
             return mainPath;
         }
-
         public string SaveFile()
         {
             // Opens the folder browswer dialog. 
             FolderBrowserDialog folder = new FolderBrowserDialog();
-
             // If the folder is ok. 
             if (folder.ShowDialog() == DialogResult.OK)
             {
@@ -58,6 +56,4 @@ namespace WatermarkAdd
                 pageCount.Add(i.ToString());
             }
             return pageCount;
-        }
-    }
-}
+        }}}

@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
 using WaterPDF;
+using Microsoft.Office.Interop.Word;
 using Syncfusion.DocIO;
+using System.IO;
 
 namespace WatermarkAdd
 {
@@ -37,14 +39,23 @@ namespace WatermarkAdd
 
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form2 form = new Form2();
-            form.Show();
         }
 
         private void saveBtn_Click(object sender, EventArgs e)
         {
             pullPath paths = new pullPath();
             destBox.Text = paths.SaveFile();
+        }
+
+        private void wtrBox_TextChanged(object sender, EventArgs e)
+        {
+            if(wtrBox.TextLength >= 140)
+            {
+                sizeBox.SelectedIndex = 1;
+            }
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
         }
     }
 }

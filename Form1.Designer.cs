@@ -76,7 +76,7 @@ namespace WatermarkAdd
             // 
             // nameBox
             // 
-            this.nameBox.Location = new System.Drawing.Point(169, 171);
+            this.nameBox.Location = new System.Drawing.Point(169, 204);
             this.nameBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nameBox.Name = "nameBox";
             this.nameBox.Size = new System.Drawing.Size(297, 22);
@@ -85,7 +85,7 @@ namespace WatermarkAdd
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(2, 171);
+            this.label2.Location = new System.Drawing.Point(2, 204);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(161, 17);
             this.label2.TabIndex = 4;
@@ -93,7 +93,7 @@ namespace WatermarkAdd
             // 
             // runBtn
             // 
-            this.runBtn.Location = new System.Drawing.Point(239, 268);
+            this.runBtn.Location = new System.Drawing.Point(239, 301);
             this.runBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.runBtn.Name = "runBtn";
             this.runBtn.Size = new System.Drawing.Size(136, 41);
@@ -108,8 +108,9 @@ namespace WatermarkAdd
             this.wtrBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.wtrBox.Multiline = true;
             this.wtrBox.Name = "wtrBox";
-            this.wtrBox.Size = new System.Drawing.Size(297, 81);
+            this.wtrBox.Size = new System.Drawing.Size(297, 125);
             this.wtrBox.TabIndex = 6;
+            this.wtrBox.TextChanged += new System.EventHandler(this.wtrBox_TextChanged);
             // 
             // label3
             // 
@@ -123,7 +124,7 @@ namespace WatermarkAdd
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(84, 207);
+            this.label4.Location = new System.Drawing.Point(84, 240);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 17);
             this.label4.TabIndex = 8;
@@ -148,7 +149,7 @@ namespace WatermarkAdd
             "36",
             "38",
             "40"});
-            this.sizeBox.Location = new System.Drawing.Point(169, 200);
+            this.sizeBox.Location = new System.Drawing.Point(169, 233);
             this.sizeBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sizeBox.Name = "sizeBox";
             this.sizeBox.Size = new System.Drawing.Size(297, 24);
@@ -157,7 +158,7 @@ namespace WatermarkAdd
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(28, 237);
+            this.label5.Location = new System.Drawing.Point(28, 270);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(123, 17);
             this.label5.TabIndex = 13;
@@ -165,7 +166,7 @@ namespace WatermarkAdd
             // 
             // destBox
             // 
-            this.destBox.Location = new System.Drawing.Point(169, 237);
+            this.destBox.Location = new System.Drawing.Point(169, 270);
             this.destBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.destBox.Name = "destBox";
             this.destBox.Size = new System.Drawing.Size(297, 22);
@@ -173,7 +174,7 @@ namespace WatermarkAdd
             // 
             // saveBtn
             // 
-            this.saveBtn.Location = new System.Drawing.Point(471, 237);
+            this.saveBtn.Location = new System.Drawing.Point(471, 270);
             this.saveBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.saveBtn.Name = "saveBtn";
             this.saveBtn.Size = new System.Drawing.Size(127, 26);
@@ -196,7 +197,7 @@ namespace WatermarkAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(610, 320);
+            this.ClientSize = new System.Drawing.Size(610, 353);
             this.Controls.Add(this.allPageCheck);
             this.Controls.Add(this.saveBtn);
             this.Controls.Add(this.destBox);

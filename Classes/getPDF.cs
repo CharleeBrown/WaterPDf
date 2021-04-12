@@ -50,7 +50,6 @@ namespace WatermarkAdd
                 // foreach page in pdf
                 // Paint the pdf and then move onto the next one?
 
-
                 // Sets the first page as the page to work on. 
                 PdfPage page = document.Pages[0];
                 string fonts = Convert.ToString(fontSize);
