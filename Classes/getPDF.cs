@@ -73,7 +73,7 @@ namespace WatermarkAdd
                 format.LineAlignment = XLineAlignment.Near;
 
                 // Creating the brush to paint with. 
-                XBrush brush = new XSolidBrush(XColor.FromKnownColor(XKnownColor.LightGray));
+                XBrush brush = new XSolidBrush(XColor.FromKnownColor(XKnownColor.LightSlateGray));
 
                 gfx.DrawString(watermark, font, brush,
                  new XPoint((page.Width - size.Width) / 2, (page.Height - size.Height) / 2),
