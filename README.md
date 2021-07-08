@@ -1,4 +1,5 @@
-# WaterPDf
-#### This is an application that adds a custom watermark on any PDF of your choice. 
-#### I couldn't find a free desktop application that adds watermarks, so I made one. 
-#### Goal : Create a nodejs backed version. 
+# WaterPDF is a free watermarking application. 
+## Choose your PDF, enter your text, and Water it!
+---------------------------------------------------
+
+### I created it after being unable to find a viable (read:free) solution to watermarking.
